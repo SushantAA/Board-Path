@@ -23,6 +23,29 @@ let  board = [
 ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
 ];
 
+let  cb = [
+    [ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+];
+
 const Board = document.querySelector("#board");
 const hight = screen.height, width = screen.width;
 let Board_html = Board.innerHTML;
@@ -51,7 +74,7 @@ let Board_row = '';
 //     if(start_node==end_node)    return ;
 //     let s = map.get(start_node);
 //         for(let i=0;i<s.length;i++)
-//         { 
+//         {
 //             let cd = distance.get(start_node)+1;
 //             if((distance.has(s[i])===false || distance.get(s[i])>=cd) &&  document.querySelector("#"+s[i]).className!="wall" )  {   distance.set(s[i],cd);
 //             document.querySelector('#'+s[i]).classList.add("visited");
@@ -117,69 +140,71 @@ let check_in_road=(i,j)=>
     return true;
 }
 let c=0;
+    c = 9999999;
 while(ix>=0 && jx>=0)
 {
-     c = 9999999;
+     // c = 9999999;
     let tx =-1,ty=-1;
-    if(ix-1>=0 && jx-1>=0 && board[ix-1][jx-1]<c && check_in_road(ix-1,jx-1) )
+    if(ix-1>=0 && jx-1>=0 && board[ix-1][jx-1]<c && check_in_road(ix-1,jx-1) && cb[ix-1][jx-1]!=999)
     {
         c=board[ix-1][jx-1];
         tx = ix-1;
         ty = jx-1;
     }
-    if(ix-1>=0 && jx>=0 && board[ix-1][jx]<c&& check_in_road(ix-1,jx) )
+    if(ix-1>=0 && jx>=0 && board[ix-1][jx]<c&& check_in_road(ix-1,jx) && cb[ix-1][jx]!=999)
     {
         c= board[ix-1][jx];
         tx = ix-1;
         ty = jx;
     }
-    if(ix-1>=0 && jx+1<=36 && board[ix-1][jx+1]<c && check_in_road(ix-1,jx+1) )
+    if(ix-1>=0 && jx+1<=37 && board[ix-1][jx+1]<c && check_in_road(ix-1,jx+1) && cb[ix-1][jx+1]!=999 )
     {
         c= board[ix-1][jx+1];
         tx = ix -1;
         ty = jx+1;
     }
 
-    if(ix>=0 && jx-1>=0 && board[ix][jx-1]<c&& check_in_road(ix,jx-1) )
+    if(ix>=0 && jx-1>=0 && board[ix][jx-1]<c&& check_in_road(ix,jx-1) && cb[ix][jx-1]!=999)
     {
         c=board[ix][jx-1];
         tx = ix;
         ty = jx-1;
     }
-    if(ix>=0 && jx+1<=36 && board[ix][jx+1]<c && check_in_road(ix,jx+1) )
+    if(ix>=0 && jx+1<=37 && board[ix][jx+1]<c && check_in_road(ix,jx+1) && cb[ix][jx+1]!=999 )
     {
         c=board[ix][jx+1];
         tx = ix;
         ty = jx+1;
     }
 
-    if(ix+1<=19 && jx-1>=0 && board[ix+1][jx-1]<c && check_in_road(ix+1,jx-1) )
+    if(ix+1<=19 && jx-1>=0 && board[ix+1][jx-1]<c && check_in_road(ix+1,jx-1) && cb[ix+1][jx-1]!=999)
     {
         c=board[ix+1][jx-1];
         tx = ix+1;
         ty = jx+1;
     }
-    if(ix+1<=19 && jx>=0 && board[ix+1][jx]<c && check_in_road(ix+1,jx) )
+    if(ix+1<=19 && jx>=0 && board[ix+1][jx]<c && check_in_road(ix+1,jx) && cb[ix+1][jx]!=999)
     {
         c=board[ix+1][jx];
         tx = ix+1;
         ty = jx;
     }
-    if(ix+1<=19 && jx+1<=36 && board[ix+1][jx+1] && check_in_road(ix+1,jx+1) )
-    {
-        c=board[ix+1][jx+1];
-        tx = ix+1;
-        ty = jx+1;
-    }
-    
+    // if(ix+1<=19 && jx+1<=36 && board[ix+1][jx+1] && check_in_road(ix+1,jx+1) )
+    // {
+    //     c=board[ix+1][jx+1];
+    //     tx = ix+1;
+    //     ty = jx+1;
+    // }
+
     let id ='a'+ (tx).toString() + 'b'+(ty).toString();
     ix = tx;
     jx = ty;
+    // cb[ix][iy]=999;
     console.log(id);
     document.querySelector("#"+id).classList.remove("boxes");
     document.querySelector("#"+id).classList.add("road");
     road.push(id);
-    c = 9999999;
+    // c = 9999999;
 }
 // for(let i=road.length-1;i>=0;i--)
 // {
@@ -192,7 +217,7 @@ const make_board = () =>{
     for(let i=0;i<hight/44;i++)
     {
         let row = 'row'+i;
-        let Board_col = '<div>'; 
+        let Board_col = '<div>';
         for(let j =0;j<width/42;j++)
         {
             let id ='a'+ i.toString() + 'b'+j.toString();
@@ -225,6 +250,7 @@ make_board();
 
 const mark_wall=(i,j)=>{
     board[i][j]=999;
+    cb[i][j]=999;
     let id ='a'+ i.toString() + 'b'+j.toString();
     document.querySelector('#'+id).classList.remove("boxes");
     document.querySelector('#'+id).classList.add("wall");
@@ -250,42 +276,42 @@ const random_wall=()=>
 
 const check = (i,j) =>
 {
-    if(i>=1 && j>=1){    
+    if(i>=1 && j>=1){
     let id ='a'+ (i-1).toString() + 'b'+(j-1).toString();
     let a = document.querySelector("#"+id).className;
     if(a == "move")   return true;  }
 
-    if(i>=1 && j>=0 ){    
+    if(i>=1 && j>=0 ){
     id ='a'+ (i-1).toString() + 'b'+(j).toString();
     a = document.querySelector("#"+id).className;
     if(a == "move")   return true;}
 
-    if(i>=1 && j<=36){    
+    if(i>=1 && j<=36){
     id ='a'+ (i-1).toString() + 'b'+(j+1).toString();
     a = document.querySelector("#"+id).className;
     if(a == "move")   return true;}
 
-    if(i>=0 && j>=1){    
+    if(i>=0 && j>=1){
     id ='a'+ (i).toString() + 'b'+(j-1).toString();
     a = document.querySelector("#"+id).className;
     if(a == "move")   return true;}
 
-    if(i>=0 && j<=36){    
+    if(i>=0 && j<=36){
     id ='a'+ (i).toString() + 'b'+(j+1).toString();
     a = document.querySelector("#"+id).className;
     if(a == "move")   return true;}
 
-    if( j>=1 && i<=19){    
+    if( j>=1 && i<=19){
     id ='a'+ (i+1).toString() + 'b'+(j-1).toString();
     a = document.querySelector("#"+id).className;
     if(a == "move")   return true;}
 
-    if(j>=0 && j<=36){    
+    if(j>=0 && j<=36){
     id ='a'+ (i+1).toString() + 'b'+(j).toString();
     a = document.querySelector("#"+id).className;
     if(a == "move")   return true;}
 
-    if( i<=19 && j<=36){    
+    if( i<=19 && j<=36){
     id ='a'+ (i+1).toString() + 'b'+(j+1).toString();
     a = document.querySelector("#"+id).className;
     if(a == "move")   return true;
@@ -312,6 +338,7 @@ $(".boxes").mousedown(function() {
     x++;
     while(x!=id.length)
     {
+
         j=j+id[x];
         x++;
     }
@@ -320,7 +347,7 @@ $(".boxes").mousedown(function() {
     if(i==19 && j==36){
         game=false
         alert("You won");
-    }   
+    }
     if(board[i][j]!=999 && check(i,j) )
     {
         document.querySelector("#"+id).classList.remove("boxes");
@@ -354,7 +381,7 @@ function performWhileMouseDown(id) {
     if(i==19 && j==36){
         game=false
         alert("You won");
-    }   
+    }
     if(board[i][j]!=999)
     {
         document.querySelector("#"+id).classList.remove("boxes");
@@ -388,7 +415,7 @@ function performWhileMouseDown(id) {
 //     if(i==19 && j==36){
 //         game=false
 //         alert("You won");
-//     }   
+//     }
 //     if(board[i][j]!=999)
 //     {
 //     $(this).toggleClass("boxes");
@@ -443,6 +470,30 @@ document.querySelector("#Play_Again").addEventListener("click",function(){
        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
        ];
 
+    cb = [
+        [ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
+    ];
+
+
     console.log("creating wall");
     random_wall();
     console.log("wall created");
@@ -487,7 +538,7 @@ const Game_PLay = () =>{
        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
        ,[ 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ]
-       ]; 
+       ];
 
     console.log("creating wall");
     random_wall();
