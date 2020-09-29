@@ -145,24 +145,24 @@ while(ix>=0 && jx>=0)
 {
      // c = 9999999;
     let tx =-1,ty=-1;
-    if(ix-1>=0 && jx-1>=0 && board[ix-1][jx-1]<c && check_in_road(ix-1,jx-1) && cb[ix-1][jx-1]!=999)
-    {
-        c=board[ix-1][jx-1];
-        tx = ix-1;
-        ty = jx-1;
-    }
+    // if(ix-1>=0 && jx-1>=0 && board[ix-1][jx-1]<c && check_in_road(ix-1,jx-1) && cb[ix-1][jx-1]!=999)
+    // {
+    //     c=board[ix-1][jx-1];
+    //     tx = ix-1;
+    //     ty = jx-1;
+    // }
     if(ix-1>=0 && jx>=0 && board[ix-1][jx]<c&& check_in_road(ix-1,jx) && cb[ix-1][jx]!=999)
     {
         c= board[ix-1][jx];
         tx = ix-1;
         ty = jx;
     }
-    if(ix-1>=0 && jx+1<=37 && board[ix-1][jx+1]<c && check_in_road(ix-1,jx+1) && cb[ix-1][jx+1]!=999 )
-    {
-        c= board[ix-1][jx+1];
-        tx = ix -1;
-        ty = jx+1;
-    }
+    // if(ix-1>=0 && jx+1<=37 && board[ix-1][jx+1]<c && check_in_road(ix-1,jx+1) && cb[ix-1][jx+1]!=999 )
+    // {
+    //     c= board[ix-1][jx+1];
+    //     tx = ix -1;
+    //     ty = jx+1;
+    // }
 
     if(ix>=0 && jx-1>=0 && board[ix][jx-1]<c&& check_in_road(ix,jx-1) && cb[ix][jx-1]!=999)
     {
@@ -177,12 +177,12 @@ while(ix>=0 && jx>=0)
         ty = jx+1;
     }
 
-    if(ix+1<=19 && jx-1>=0 && board[ix+1][jx-1]<c && check_in_road(ix+1,jx-1) && cb[ix+1][jx-1]!=999)
-    {
-        c=board[ix+1][jx-1];
-        tx = ix+1;
-        ty = jx+1;
-    }
+    // if(ix+1<=19 && jx-1>=0 && board[ix+1][jx-1]<c && check_in_road(ix+1,jx-1) && cb[ix+1][jx-1]!=999)
+    // {
+    //     c=board[ix+1][jx-1];
+    //     tx = ix+1;
+    //     ty = jx+1;
+    // }
     if(ix+1<=19 && jx>=0 && board[ix+1][jx]<c && check_in_road(ix+1,jx) && cb[ix+1][jx]!=999)
     {
         c=board[ix+1][jx];
@@ -423,6 +423,8 @@ function performWhileMouseDown(id) {
 //     }
 // });
 
+
+
 const Nodes = document.querySelectorAll(".boxes");
 const start = Nodes[0] ,  end = Nodes[739]  ;
 start.classList.remove("boxes");
@@ -432,8 +434,87 @@ end.classList.add("end");
 
 random_wall();
 
+const wall_make = () =>{
+    let m1 =false;
+$(".boxes").mousedown(function() {
+    if(game===true){
+    console.log("mouse down   --->  "+ this.id);
+    m1= true;}
+}).mouseover(function(){
+    if(m1===true ){
+    console.log("mouseover   "  +  this.id);
+    let id = this.id;
+    let x=2;
+    let i=id[1],j='';
+    while(id[x]!='b')
+    {
+        i=i+id[x];
+        x++;
+    }
+    x++;
+    while(x!=id.length)
+    {
+
+        j=j+id[x];
+        x++;
+    }
+    i = parseInt(i);
+    j = parseInt(j);
+    if(i==19 && j==36){
+        game=false
+        alert("You won");
+    }
+    if(1)
+    {
+        document.querySelector("#"+id).classList.remove("boxes");
+        document.querySelector("#"+id).classList.add("wall");
+        console.log(id);
+    }
+    }
+}).mouseup(function() {
+    if(game==true){
+    console.log("mouse up   --->    "+ this.id);
+    m1 = false;}
+});
+function performWhileMouseDown(id) {
+    console.log("mouseenter  --->   " +id);
+    if(m1==false)        return ;
+    let x=2;
+    let i=id[1],j='';
+    while(id[x]!='b')
+    {
+        i=i+id[x];
+        x++;
+    }
+    x++;
+    while(x!=id.length)
+    {
+        j=j+id[x];
+        x++;
+    }
+    i = parseInt(i);
+    j = parseInt(j);
+    if(i==19 && j==36){
+        game=false
+        alert("You won");
+    }
+    if(1)
+    {
+        document.querySelector("#"+id).classList.remove("boxes");
+        document.querySelector("#"+id).classList.add("wall");
+        console.log(id);
+    }else {
+        console.log("done");
+    }
+}
+}
+
 document.querySelector("#Path").addEventListener("click",function(){
     way();
+});
+
+document.querySelector("#wall_make").addEventListener("click",function(){
+    wall_make();
 });
 
 document.querySelector("#Play_Again").addEventListener("click",function(){
